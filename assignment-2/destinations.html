@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .home-button {
+            background-color: orange;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        /* Header Section */
+        .header h1 {
+            font-size: 28px;
+        }
+        .header p {
+            color: gray;
+        }
+
+        /* Destination Grid */
+        .destination-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .destination-card {
+            display: flex;
+            align-items: center;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+        .destination-card:hover {
+            transform: scale(1.05);
+        }
+
+        .destination-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .destination-info {
+            text-align: left;
+        }
+        .destination-info h3 {
+            margin: 0;
+        }
+        .destination-info p {
+            color: gray;
+            font-size: 14px;
+        }
+
+        /* See More Button */
+        .see-more {
+            margin-top: 20px;
+            background: none;
+            border: 1px solid green;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <img src="img/image 1.png" alt="Travel Logo" width="50">
+        <a href="home.html"><button class="home-button">Home Page</button></a>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Plan your perfect trip</h1>
+        <p>Search Flights & Places Hire to our most popular destinations</p>
+    </div>
+
+    <!-- Destinations Grid -->
+    <div class="destination-container">
+        <div class="destination-card">
+            <img src="img/turkey.jpg" alt="Istanbul">
+            <div class="destination-info">
+                <h3>Istanbul, Turkey</h3>
+                <p>Flights • Hotels • Resorts</p>
+            </div>
+        </div>
+        <div class="destination-card">
+            <img src="img/sydney.jpg" alt="Sydney">
+            <div class="destination-info">
+                <h3>Sydney, Australia</h3>
+                <p>Flights • Hotels • Resorts</p>
+            </div>
+        </div>
+        <div class="destination-card">
+            <img src="img/baku.jpg" alt="Baku">
+            <div class="destination-info">
+                <h3>Baku, Azerbaijan</h3>
+                <p>Flights • Hotels • Resorts</p>
+            </div>
+        </div>
+        <div class="destination-card">
+            <img src="img/maldives.jpg" alt="Maldives">
+            <div class="destination-info">
+                <h3>Malé, Maldives</h3>
+                <p>Flights • Hotels • Resorts</p>
+            </div>
+        </div>
+        <div class="destination-card">
+            <img src="img/paris.jpg" alt="Paris">
+            <div class="destination-info">
+                <h3>Paris, France</h3>
+                <p>Flights • Hotels • Resorts</p>
+            </div>
+        </div>
+        <div class="destination-card">
+            <img src="img/new york.jpg" alt="New York">
+            <div class="destination-info">
+                <h3>New York, US</h3>
+                <p>Flights • Hotels • Resorts</p>
+            </div>
+        </div>
+        <div class="destination-card">
+            <img src="img/londan.jpg" alt="London">
+            <div class="destination-info">
+                <h3>London, UK</h3>
+                <p>Flights • Hotels • Resorts</p>
+            </div>
+        </div>
+        <div class="destination-card">
+            <img src="img/tokyo.jpg" alt="Tokyo">
+            <div class="destination-info">
+                <h3>Tokyo, Japan</h3>
+                <p>Flights • Hotels • Resorts</p>
+            </div>
+        </div>
+        <div class="destination-card">
+            <img src="img/dubai.jpg" alt="Dubai">
+            <div class="destination-info">
+                <h3>Dubai, UAE</h3>
+                <p>Flights • Hotels • Resorts</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- See More Button -->
+    <button class="see-more">See more places</button>
+</body>
+</html>

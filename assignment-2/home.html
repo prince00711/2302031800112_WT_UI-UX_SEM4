@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Homepage</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid gray;
+            width: 300px;
+        }
+
+        .search-icon {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .nav-buttons button {
+            background-color: orange;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        /* Main content */
+        .main-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            margin-top: 20px;
+        }
+
+        .text-section {
+            max-width: 50%;
+        }
+
+        .text-section h2 {
+            color: orange;
+        }
+
+        .text-section h1 {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .buttons-container {
+            margin-top: 20px;
+        }
+
+        .buttons-container button {
+            background-color: orange;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        /* Image Section */
+        .image-section img {
+            width: 500px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/image 1.png" alt="Travel Logo" width="50">
+        </div>
+        <input type="text" class="search-bar" placeholder="Search here">
+        <span class="search-icon">🔍</span>
+        <div class="nav-buttons">
+           <a href="signup.html"><button>Sign in</button></a>
+           <a href="login.html"><button>Login</button></a> 
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="text-section">
+            <h2>BEST DESTINATIONS AROUND THE WORLD</h2>
+            <h1>Travel, enjoy and live a new and full life</h1>
+            <p>
+                Built wicket longer admire do barton vanity itself do in it.
+                Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.
+            </p>
+            <div class="buttons-container">
+              <a href="destinations.html"><button>Destinations</button></a>
+                <a href="hotels.html"><button>Hotels</button></a>
+               <a href="flights.html"><button>Flights</button></a>
+                <a href="booking.html"><button>Bookings</button></a>
+               <a  href="review.html"><button>Reviews</button></a>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="img/image 7.png" alt="Let's Go Travel">
+        </div>
+    </div>
+</body>
+</html>

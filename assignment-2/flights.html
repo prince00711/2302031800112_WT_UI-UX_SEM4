@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .search-bar {
+            display: flex;
+            gap: 10px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .filters {
+            width: 250px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .flight-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .flight-card {
+            display: flex;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .flight-info {
+            flex-grow: 1;
+        }
+        .flight-info h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .flight-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+        .flight-info button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .home-btn {
+            background-color: orange;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="home.html"><button class="home-btn">Home page</button></a>
+        <div class="search-bar">
+            <input type="text" placeholder="From - To">
+            <select>
+                <option>Return</option>
+                <option>One Way</option>
+            </select>
+            <input type="date" placeholder="Depart - Return">
+            <select>
+                <option>1 Passenger, Economy</option>
+                <option>2 Passenger, Economy</option>
+                <option>1 Passenger, Business class</option>
+                <option>1 Passenger, first class</option>
+                <option>1 Passenger, Premium Economy</option>
+            </select>
+            <button>Search</button>
+        </div>
+    </header>
+    <main>
+        <aside class="filters">
+            <h3>Filters</h3>
+            <label>Price</label>
+            <input type="range" min="50" max="1200">
+            <label>Departure Time</label>
+            <input type="range" min="0" max="24">
+            <label>Airlines</label>
+            <div>
+                <input type="checkbox"> Emirates
+                <input type="checkbox"> Fly Dubai
+                <input type="checkbox"> Qatar
+                <input type="checkbox"> Etihad
+            </div>
+        </aside>
+        <section class="flight-list">
+            <div class="flight-card">
+                <div class="flightlogo">
+                    <img src="img/emirates.jpg" alt="">
+                </div>
+                <div class="flight-info">
+                    <h2>Emirates</h2>
+                    <p>Non-stop | 2h 28m</p>
+                    <p>Starting from $104</p>
+                    <button>View Deals</button>
+                </div>
+            </div>
+            <div class="flight-card">
+                <div class="flightlogo">
+                    <img src="img/fly dubai.jpg" alt="">
+                </div>
+                <div class="flight-info">
+                    <h2>Fly Dubai</h2>
+                    <p>Non-stop | 2h 28m</p>
+                    <p>Starting from $104</p>
+                    <button>View Deals</button>
+                </div>
+            </div>
+            <div class="flight-card">
+                <div class="flightlogo">
+                    <img src="img/Qatar.jpg" alt="">
+                </div>
+                <div class="flight-info">
+                    <h2>Qatar Airways</h2>
+                    <p>Non-stop | 2h 28m</p>
+                    <p>Starting from $104</p>
+                    <button>View Deals</button>
+                </div>
+            </div>
+            <div class="flight-card">
+                <div class="flightlogo">
+                    <img src="img/etihad.jpg" alt="">
+                </div>
+                <div class="flight-info">
+                    <h2>Etihad Airways</h2>
+                    <p>Non-stop | 2h 28m</p>
+                    <p>Starting from $104</p>
+                    <button>View Deals</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .home-btn {
+            background-color: orange;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: white;
+        }
+        .flight-details, .payment-section, .price-details, .login-section {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .price {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .payment-option {
+            margin-bottom: 10px;
+        }
+        .login-section input, .login-section button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .social-login button {
+            width: 30%;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo"> <img src="img/image 1.png" alt="Travel Logo"> </div>
+        <a href="home.html"><button class="home-btn">Home page</button></a>
+    </header>
+
+    <!-- Flight Details Section -->
+    <section class="flight-details">
+        <h2>Emirates A380 Airbus</h2>
+        <p>Return Wed, Dec 8</p>
+        <h3 class="price">$240</h3>
+        <p>2h 28m</p>
+        <div class="flight-info">
+            <img src="img/emirates.jpg" alt="Emirates"> <span>Emirates Airbus A320</span>
+            <div class="timing">
+                <span>12:00 pm</span>
+                <span>Newark (EWR)</span>
+                <span>→</span>
+                <span>12:00 pm</span>
+                <span>Newark (EWR)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="payment-section">
+        <div class="payment-option">
+            <input type="radio" name="payment" checked> <label>Pay in full</label>
+            <p>Pay the total and you are all set</p>
+        </div>
+        <div class="payment-option">
+            <input type="radio" name="payment"> <label>Pay part now, part later</label>
+            <p>Pay $207.43 now, and the rest will be charged automatically on april 14, 2025.</p>
+        </div>
+    </section>
+
+    <!-- Price Details -->
+    <aside class="price-details">
+        <h3>Economy Emirates A380 Airbus</h3>
+        <p>4.2 ⭐ Very Good (54 reviews)</p>
+        <p>Base Fare: $400</p>
+        <p>Discount: $400</p>
+        <p>Taxes: $400</p>
+        <p>Service Fee: $400</p>
+        <h3>Total: $400</h3>
+    </aside>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <h3>Login or Sign up to book</h3>
+        <input type="text" placeholder="Phone Number">
+        <button>Continue</button>
+        <div class="social-login">
+            <button>Facebook</button>
+            <button>Google</button>
+            <button>Apple</button>
+        </div>
+        <button>Continue with email</button>
+    </section>
+</body>
+</html>

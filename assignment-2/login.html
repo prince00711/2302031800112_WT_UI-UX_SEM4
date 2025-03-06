@@ -1,0 +1,107 @@
+adiv<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Golobe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff;
+        }
+        .container {
+            display: flex;
+            width: 900px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .login-box {
+            flex: 1;
+            padding: 40px;
+            background: #fff;
+        }
+        .login-box h2 {
+            color: #ff6600;
+        }
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f3e6e6;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background: #f3e6e6;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .social-login {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-login img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+        .register-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .register-link a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #ff6600;
+        }
+        .image-box {
+            flex: 1;
+            background: url('travel-image.jpg') center/cover no-repeat;
+        }
+        .home-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #ff6600;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>LOG IN</h2>
+            <p>Login to access your Golobe account</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <p><a href="#">Forgot your Paasssword?</a></p>
+            <a href="home.html"><button>Login</button></a>
+            <p style="text-align:center;">OR</p>
+            <div class="social-login">
+                <img src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" alt="Google">
+                <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Facebook">
+                <img src="https://img.icons8.com/?size=100&id=A4DsujzAX4rw&format=png&color=000000" alt="X">
+            </div>
+            <div class="register-link">
+                <p>Don’t have an account? <a href="#">Register Now</a></p>
+            </div>
+        </div>
+        <div class="image-box"><img src="img/image 8.png " alt="" height="500px"></div>
+    </div>
+</body>
+</html>
